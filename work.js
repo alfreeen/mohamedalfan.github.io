@@ -24,3 +24,26 @@ function openmenu(){
 function closemenu(){
     sidemenu.style.right = "-200px";
 }
+
+const scriptURL = "https://script.google.com/macros/s/AKfycbyFLj-aeKMamAnUDR0pPmRPz6IYoNpD9L7XqQgbUMaiIru9b3sEJB2GNcv-tasEQxjEDg/exec";
+
+const form = document.forms["submit-to-google-sheet"];
+const msg = document.getElementById("msg");
+
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: new FormData(form)
+  })
+  .then(response => response.text())
+  .then(data => {
+    msg.innerHTML = "Message sent successfully!";
+    form.reset();
+  })
+  .catch(error => {
+    msg.innerHTML = "Something went wrong. Please try again.";
+    console.error(error);
+  });
+});
