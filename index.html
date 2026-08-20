@@ -194,24 +194,7 @@
 <div class="copyright">
   <p><i class="fa-regular fa-copyright"></i> Copyright web site profile.Made with by mohamed alfan....</p>
 </div>
-  <script src="work.js"></script>  
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxl47Ner3KhFTCEG4AXOEGJdBrLeb_YDLHW_jYUAPkLmuzmpJEIdURmW-FuOBB9Uy4MkA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg");
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Message send successfully"
-          setTimeout(function(){
-            msg.innerHTML = ""
-          },5000)
-          form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
+ 
   </script>
 </body>
 </html>
