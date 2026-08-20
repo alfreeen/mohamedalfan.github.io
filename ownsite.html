@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfan's website...</title>
+    <link rel="stylesheet" href="design.css">
+    <link rel="icon" href="images/profileicon.png">
+    <script src="https://kit.fontawesome.com/8d46cbbe46.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- ------------------home---------------- -->
+<div id="header">
+  <div class="container">
+    <img src="images/logo.jpg" class="logo">
+    <nav>
+      <ul id="sidemenu">
+        <il><a href="#header">HOME</a></il>
+        <il><a href="#about">ABOUT</a></il>
+        <il><a href="#services">SERVICES</a></il>
+        <il><a href="#portfolio">HOBBY & HABIT </a></il>
+        <il><a href="#contact">CONTACT</a></il>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Full stack developer</p>
+      <h1>Hi, I'm <span>Mohamed Alfan</span><br> From Tamil nadu.</h1>
+    </div>
+  </div>
+</div>
+<!-- ------------------------about-------------------------------->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+<img src="images/about.jpg">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title"><i class="fa-regular fa-address-card"></i>  About Me </h1>
+        <p>My name is Mohamed Alfan, and I am an MCA graduate from the class of 2024. With a solid foundation in full-stack
+           development, I have specialized knowledge in Python and a strong interest in front-end development. I am a self-motivated individual, 
+           always eager to learn and push my limits to stay ahead in the ever-evolving field of technology.
+
+          I possess hands-on experience with key front-end technologies such as HTML, CSS, Bootstrap, and JavaScript, which 
+          allows me to build responsive and dynamic web applications. My passion for front-end development stems from the 
+          creative and interactive aspects it offers, enabling me to turn complex ideas into user-friendly digital experiences.
+          
+          Alongside my technical skills, I consider myself a disciplined, self-driven person who is always seeking new 
+          challenges. I thrive on continuous learning and improvement, which has helped me build a strong portfolio as a 
+          full-stack developer. In my free time, I enjoy watching movies and listening to music, which are my go-to activities for
+           unwinding and getting inspired.
+          
+          I believe that combining technical expertise with creativity leads to innovative solutions, and that is the mindset I
+           bring to every project I work on.</p>
+           <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills  <i class="fa-solid fa-shield-halved"></i></p>
+            <p class="tab-links" onclick="opentab(event, 'project')">Project & Intern   <i class="fa-solid fa-diagram-project"></i></p>
+            <p class="tab-links" onclick="opentab(event, 'education')">Education  <i class="fa-solid fa-user-graduate"></i></p>
+          </div>
+          
+          <div class="tab-contents active-tab" id="skills">  <!-- Corrected id from "skils" to "skills" -->
+            <ul>
+              <li><span>HTML <i class="fa-brands fa-html5"></i> , CSS <i class="fa-brands fa-css3-alt"></i> , JavaScript <i class="fa-brands fa-square-js"></i> , Bootstrap <i class="fa-brands fa-bootstrap"></i></span><br>Web Development / App Interfaces</li>
+              <li><span>React <i class="fa-brands fa-react"></i> , Python <i class="fa-brands fa-python"></i> </span><br>App Design, Development / Backend</li>
+              <li><span>MySQL <i class="fa-solid fa-database"></i></span><br>Databases</li>
+              <li><span>MS Office <i class="fa-brands fa-windows"></i></span><br>Word / Excel / PowerPoint / Access / Outlook</li>
+            </ul>
+          </div>
+          
+          <div class="tab-contents" id="project">
+            <ul>
+              <li><span>2021-Mar to 2021-Dec</span><br>Virtual Keyboard & Library Management</li>
+              <li><span>2022-Dec to 2023-May</span><br>Hospital Management System</li>
+              <li><span>2023-Dec to 2024-Jun</span><br>Car Rental Management System</li>
+              <li><span>2023-Jul to 2024-Oct (Internship)</span><br>Zoho Corporation Private Limited, Chennai</li>
+            </ul>
+          </div>
+          
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2017</span><br>'SSLC' from AL'Ameen Metric Hr Sec School, Kumbakonam</li>
+              <li><span>2019</span><br>'HSC' from AL'Ameen Metric Hr Sec School, Kumbakonam</li>
+              <li><span>2019 to 2022</span><br>'BCA' from Jamal Mohamed College, Trichy</li>
+              <li><span>2022 to 2024</span><br>'MCA' from Mohamed Sathak College of Arts & Science, Chennai</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------------------SERVICES------------------- -->
+ <div id="services">
+  <div class="container">
+    <h1 class="sub-title"><i class="fa-solid fa-check-to-slot"></i>   My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Design</h2>
+        <p>Web design involves creating the visual elements and layout of a website, 
+          while coding involves translating these designs into a functional website using programming languages like HTML,
+           CSS, and JavaScript.</p>
+            <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-database"></i>
+        <h2>Database Administrator</h2>
+        <p>Manages the data systems and structures of MySQL Server. They use software to store and organize data,
+           and ensure that users can access it easily and that it's protected from unauthorized access.</p>
+            <a href="https://en.wikipedia.org/wiki/Database_administrator">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-bug"></i>
+        <h2>Technical Support</h2>
+        <p>Technical support provides assistance to users in resolving issues related to hardware, software, and networks. 
+          It ensures smooth operation by troubleshooting problems, offering solutions, and guiding users through technical processes.</p>
+            <a href="https://en.wikipedia.org/wiki/Technical_support">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+ </div>
+ <!-- -------------------hobby and habit ---------------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title"><i class="fa-solid fa-cake-candles"></i>  My Hobby & Habit</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/photo1.jpg">
+        <div class="layer">
+          <h3>Photo Shoot</h3>
+          <p>A photo Shoot is a session where a photographer captures images of a subject, be it a person, object, 
+            or scene, in a controlled setting. It involves careful planning of lighting,
+             angles, and poses to achieve the desired visual outcome.</p>
+             <a href="https://en.wikipedia.org/wiki/Photo_shoot"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/photo2.jpg">
+        <div class="layer">
+          <h3>Social Media </h3>
+          <p>Social media platforms allow people to connect, share content, and communicate instantly across the globe. 
+            These platforms facilitate the exchange of ideas, personal updates, and multimedia, fostering both personal 
+            and professional relationships.</p>
+             <a href="https://en.wikipedia.org/wiki/Social_media"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/photo3.jpg">
+        <div class="layer">
+          <h3>Music Listening</h3>
+          <p>Listening to music provides a way to relax, focus, or uplift your mood through rhythmic melodies and lyrics.
+             It can be a personal escape or a shared experience, connecting people through various genres and emotions.</p>
+             <a href="https://en.wikipedia.org/wiki/Music"><i class="fa-solid fa-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="https://www.google.com/search?sca_esv=c9b165f8b0051b14&sxsrf=ADLYWIK96VxVOty5qrEwKSQkpS7XOE8DsA:1729404884347&q=Hobby+and+Habit&spell=1&sa=X&ved=2ahUKEwjorLeep5yJAxX1xTgGHfN_Lp0QBSgAegQIDBAB&biw=1536&bih=730&dpr=1.25" class="btn">See more</a>
+  </div>
+</div>
+<!-- --------------------contact------------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"><i class="fa-regular fa-id-badge"></i>  Contact Me</h1>
+        <p><i class="fa-solid fa-envelope"></i>  alfanmohamed91@gmail.com</p>
+        <p><i class="fa-brands fa-whatsapp"></i>  91+8825526189</p>
+        <p><i class="fa-solid fa-location-dot"></i>  Electronic City,Bangalore,Karnataka.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/__mohd_alfan__/?__pwa=1"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100008773562936"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.snapchat.com/add/mohamed_alfan20?share_id=pyKOl3l6QHg&locale=en-US"><i class="fa-brands fa-square-snapchat"></i></a>
+          <a href="https://x.com/mohd_alfan?t=QsiRyQbZeerzaZ-_kFMV6Q&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/mohamed-alfan-049a1324b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIAUSQgYXQamAME%2BNm24D0w%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/alfreeen"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="images/my-cv.pdf" class="btn btn2" download><i class="fa-solid fa-circle-down"></i>  Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" row="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2"> submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="copyright">
+  <p><i class="fa-regular fa-copyright"></i> Copyright web site profile.Made with by mohamed alfan....</p>
+</div>
+  <script src="work.js"></script>  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxl47Ner3KhFTCEG4AXOEGJdBrLeb_YDLHW_jYUAPkLmuzmpJEIdURmW-FuOBB9Uy4MkA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message send successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
